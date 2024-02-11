@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1F2041;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+}
+
+button {
+  padding: 30px;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out ;
+}
+
+#oncomingfist {
+  background-color: #a200ff;
+}
+
+#raisehand {
+  background-color: #9ee01a;
+}
+
+#victoryhand {
+  background-color: #7dbeed ;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.buttons{ /* Para usar o GAP tem que ser display flex */ 
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.you-score{
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.you-score span{
+  color: #00A7E1;
+  font-weight: bold;
+}
+
+.machine-score{
+  margin-top: 25px;
+  font-size: 25px;
+}
+.machine-score span{
+  color: #FF0458;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 40px;
+  font-size: 25px;
+  color: #1F2041;
+}
+
