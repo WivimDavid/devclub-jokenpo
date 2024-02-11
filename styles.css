@@ -28,8 +28,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
-  width: 50vw;
+  height: 80vh;
+  width: 80vw;
 }
 
 button {
@@ -88,3 +88,105 @@ button:hover {
   color: #1F2041;
 }
 
+/* Responsividade */
+
+@media screen and (max-width: 520px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1F2041;
+  }
+  
+.container {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 100px 30px ;
+  height: 60vh;
+  width: 82vw;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+button {
+  padding: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out ;
+}
+}
+
+
+/* Iphone 5 */
+@media screen and (max-width: 370px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1F2041;
+  }
+  
+.container {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 50px 30px ;
+  height: 80vh;
+  width: 82vw;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+button {
+  padding: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out ;
+}
+
+
+.buttons{ /* Para usar o GAP tem que ser display flex */ 
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.you-score{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.you-score span{
+  color: #00A7E1;
+  font-weight: bold;
+}
+
+.machine-score{
+  margin-top: 25px;
+  font-size: 20px;
+}
+.machine-score span{
+  color: #FF0458;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #1F2041;
+  font-weight: bold;
+}
+}
